@@ -1,7 +1,9 @@
 <template>
     <div class="gallery-header">
         <img src='../assets/Galleryheader.jpg' alt="">
-        <h1>Gallery</h1>
+        <div class="gallery-header-text">
+            <h1>Gallery</h1>
+        </div>
     </div>
 </template>
 <script lang="ts">
@@ -31,12 +33,22 @@ export default class Galleryheader extends Vue {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    font-family: gt-sectra;
+    font-weight: 200;
 }
 .gallery-header h1{
     position: relative;
     z-index: 3;
-    margin-left: 10%;
     font-weight: 200;
-    font-size: 66px;
+    font-size: 82px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.gallery-header-text{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 </style>

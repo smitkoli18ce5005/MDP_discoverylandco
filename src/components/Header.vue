@@ -29,9 +29,11 @@
   width: 80%;
   left: 50%;
   transform: translate(-50%, 0);
-  padding: 40px;
-  line-height: 0.9rem;
-  letter-spacing: 2px;
+  padding: 55px;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+
   a {
     color: #ffffff;
     margin-right: 3rem;

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="aboutdlc">
     <Header />
   </div>
 </template>
@@ -15,7 +15,7 @@ import Header from '@/components/Header.vue';
     Footer
   },
 })
-export default class Gallery extends Vue {
+export default class AboutDLC extends Vue {
 }
 </script>
 
@@ -24,7 +24,7 @@ body{
     background-image: none;
     background-color: #000000;
 }
-.home{
+.aboutdlc{
   position: absolute;
   left: 0;
   top: 0;
