@@ -42,6 +42,7 @@
     .gallery-photo{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
     }
     .photos{
         padding-top: 65%;
