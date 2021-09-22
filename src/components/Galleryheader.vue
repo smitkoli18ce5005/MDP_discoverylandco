@@ -16,7 +16,7 @@ export default class Galleryheader extends Vue {
 .gallery-header{
     height: 65vh;
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     overflow: hidden;
