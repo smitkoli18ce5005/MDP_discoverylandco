@@ -1,30 +1,53 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+    <div id="nav">
+      <img src="../src/assets/logo.png" alt="logo">
+      <div class="navigation">
+      <router-link to="/"></router-link>
+      <router-link to="/about-dlc">About DLC</router-link>
+      <router-link to="/our-worlds">Our Worlds</router-link>
+      <router-link to="/experiences">Experiences</router-link>
+      <router-link to="/gallery">Gallery</router-link>
+      <router-link to="/press">Press</router-link>
+      <button>options</button>
+      </div>
+    </div>
   <router-view/>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@mixin flexRow(){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
 }
 
+#app {
+  font-family: gt-sectra;
+  color: #ffffff;
+}
 #nav {
-  padding: 30px;
-
+  @include flexRow();
+  position: fixed;
+  z-index: 1000;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 40px;
+  line-height: 0.9rem;
+  letter-spacing: 2px;
   a {
-    font-weight: bold;
-    color: #2c3e50;
-
+    color: #ffffff;
+    margin-right: 3rem;
+    text-decoration: none;
     &.router-link-exact-active {
-      color: #42b983;
+      border-bottom: 1px solid #ffffff;
     }
   }
+}
+#nav > img{
+  width: 10%;
+  padding-bottom: 1px;
+  padding-top: 1px;
 }
 </style>
