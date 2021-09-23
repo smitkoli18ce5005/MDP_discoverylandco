@@ -1,13 +1,14 @@
 <template>
     <div id="nav">
-      <img src='../assets/logo.png' alt="Logo Image">
+      <a href="/"><img src='../assets/logo.png' alt="Logo Image"></a>
       <div class="navigation">
       <router-link to="/about-dlc" v-text="routeList[0]"></router-link>
       <router-link to="/our-worlds" v-text="routeList[1]"></router-link>
       <router-link to="/experiences" v-text="routeList[2]"></router-link>
       <router-link to="/gallery" v-text="routeList[3]"></router-link>
       <router-link to="/press" v-text="routeList[4]"></router-link>
-      <button>options</button>
+      <a href="/">&#x2630;</a>
+      <!--<button>options</button>-->
       </div>
     </div>
   <router-view/>
@@ -49,19 +50,21 @@ $whiteColor: #ffffff;
   letter-spacing: 1px;
   font-size: 1.2rem;
 
-  a {
-    color: $whiteColor;
-    margin-right: 3rem;
+  img {
+    width: 25%;
+    padding-bottom: 1px;
+    padding-top: 1px;
+  }
+}
+.navigation{
+  @include flexRow();
+  flex-basis: 80%;
+}
+.navigation a{
+color: $whiteColor;
     text-decoration: none;
     &.router-link-exact-active {
       border-bottom: 1px solid $whiteColor;
     }
-  }
-
-  img {
-    width: 10%;
-    padding-bottom: 1px;
-    padding-top: 1px;
-  }
 }
 </style>

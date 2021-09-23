@@ -156,22 +156,23 @@ export default class OurWorldGridComponent extends Vue {
         width: 100%;
         height: 70%;
         object-fit: cover;
-        padding-bottom: 3%;
+        padding-bottom: 1%;
     }
     h1{
         font-family: sans-serif;
-        font-size: .85rem;
+        font-size: 1rem;
         text-transform: uppercase;
         color: #fff;
         line-height: 1.1;
-        letter-spacing: 1px;
         margin-top: 1rem;
         padding: 0;
     }
     p{
+        font-family: sans-serif;
         line-height: 1.3;
         margin-top: .25rem;
-        font-size: 0.9rem;
+        font-size: 1rem;
+        letter-spacing: 1px;
         color: #777;
     }
 }
