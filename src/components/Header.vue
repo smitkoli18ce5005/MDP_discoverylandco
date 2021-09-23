@@ -51,7 +51,7 @@ $whiteColor: #ffffff;
   font-size: 1rem;
 
   img {
-    width: 30%;
+    width: 140px;
     padding-bottom: 1px;
     padding-top: 1px;
   }

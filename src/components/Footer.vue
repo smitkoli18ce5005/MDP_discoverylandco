@@ -124,7 +124,7 @@ footer {
   @include flexProperty(row);
 }
 footer .footer-content img {
-  width: 3%;
+  width: 60px;
   height: 5%;
   padding: 1%;
   margin-top: 1%;
