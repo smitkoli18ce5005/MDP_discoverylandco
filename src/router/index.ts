@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 import AboutDLC from '../views/AboutDLC.vue'
+import OurWorlds from '../views/OurWorlds.vue'
+import Experiences from '../views/Experiences.vue'
+import Gallery from '../views/Gallery.vue'
+import Press from '../views/Press.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -11,42 +15,27 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/about-dlc',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: AboutDLC
   },
   {
     path: '/our-worlds',
     name: 'OurWorlds',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: Home
+    component: OurWorlds
   },
   {
     path: '/experiences',
     name: 'Experiences',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: Home
+    component: Experiences
   },
   {
     path: '/gallery',
     name: 'Gallery',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Gallery.vue')
+    component: Gallery
   },
   {
     path: '/press',
     name: 'Press',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: Home
+    component: Press
   },
 ]
 

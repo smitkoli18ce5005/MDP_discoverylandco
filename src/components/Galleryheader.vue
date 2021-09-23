@@ -1,49 +1,52 @@
 <template>
     <div class="gallery-header">
-        <img src='../assets/Galleryheader.jpg' alt="">
+        <img src='../assets/Gallery/Galleryheader.jpg' alt="Gallery Header Image">
         <div class="gallery-header-text">
-            <h1>Gallery</h1>
+            <h1 v-text="gallery"></h1>
         </div>
     </div>
 </template>
+
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
 @Options({
 })
 export default class Galleryheader extends Vue {
+    private readonly gallery: string = 'Gallery'
 }
 </script>
+
 <style lang="scss">
-.gallery-header{
-    height: 65vh;
-    width: 100%;
-    position: relative;
+@mixin position($pos){
+    position: $pos;
     top: 0;
     left: 0;
-    overflow: hidden;
+}
+
+.gallery-header{
+    @include position(relative);
+    height: 65vh;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 .gallery-header img{
+    @include position(absolute);
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    font-family: gt-sectra;
-    font-weight: 200;
 }
-.gallery-header h1{
+.gallery-header-text h1{
     position: relative;
     z-index: 3;
-    font-weight: 200;
-    font-size: 82px;
-    text-align: left;
     margin: 0;
     padding: 0;
+    text-align: left;
+    font-size: 82px;
+    font-family: gt-sectra;
+    font-weight: 200;
 }
 .gallery-header-text{
     max-width: 60%;

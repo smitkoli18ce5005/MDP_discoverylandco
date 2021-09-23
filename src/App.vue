@@ -1,5 +1,5 @@
 <template>
-    <div id="nav">
+    <div>
     </div>
   <router-view/>
 </template>
@@ -11,7 +11,14 @@
   justify-content: space-between;
   align-items: center
 }
-
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+  background-image: none;
+  background-color: #111;
+}
 #app {
   font-family: gt-sectra;
   color: #ffffff;

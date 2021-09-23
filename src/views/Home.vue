@@ -1,17 +1,21 @@
 <template>
-  <div class="home">
+  <div class="main-home-div">
     <Header />
+    <HomeHeader />
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import Footer from '@/components/Footer.vue';
 import Header from '@/components/Header.vue';
+import HomeHeader from '@/components/HomeHeader.vue';
+import Footer from '@/components/Footer.vue';
 
 @Options({
   components: {
     Header,
+    HomeHeader,
     Footer
   },
 })
@@ -20,14 +24,10 @@ export default class Gallery extends Vue {
 </script>
 
 <style lang="scss">
-body{
-    background-image: none;
-    background-color: #000000;
-}
-.home{
+.main-home-div{
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 </style>

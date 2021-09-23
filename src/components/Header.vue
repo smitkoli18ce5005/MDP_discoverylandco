@@ -1,20 +1,35 @@
 <template>
     <div id="nav">
-      <img src="../assets/logo.png" alt="logo">
+      <img src='../assets/logo.png' alt="Logo Image">
       <div class="navigation">
-      <router-link to="/"></router-link>
-      <router-link to="/about-dlc">About DLC</router-link>
-      <router-link to="/our-worlds">Our Worlds</router-link>
-      <router-link to="/experiences">Experiences</router-link>
-      <router-link to="/gallery">Gallery</router-link>
-      <router-link to="/press">Press</router-link>
+      <router-link to="/about-dlc" v-text="routeList[0]"></router-link>
+      <router-link to="/our-worlds" v-text="routeList[1]"></router-link>
+      <router-link to="/experiences" v-text="routeList[2]"></router-link>
+      <router-link to="/gallery" v-text="routeList[3]"></router-link>
+      <router-link to="/press" v-text="routeList[4]"></router-link>
       <button>options</button>
       </div>
     </div>
   <router-view/>
 </template>
 
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+
+@Options({
+})
+
+
+export default class Galleryheader extends Vue {
+  private readonly loginURL: string = '../assets/logo.png'
+  private readonly aboutdlc: string = 'About DLC'
+  private readonly routeList: string[] = ['About DLC', 'Our Worlds', 'Experiences', 'Gallery', 'Press']
+}
+</script>
+
 <style lang="scss">
+$whiteColor: #ffffff;
+
 @mixin flexRow(){
   display: flex;
   flex-direction: row;
@@ -35,17 +50,18 @@
   font-size: 1.2rem;
 
   a {
-    color: #ffffff;
+    color: $whiteColor;
     margin-right: 3rem;
     text-decoration: none;
     &.router-link-exact-active {
-      border-bottom: 1px solid #ffffff;
+      border-bottom: 1px solid $whiteColor;
     }
   }
-}
-#nav > img{
-  width: 10%;
-  padding-bottom: 1px;
-  padding-top: 1px;
+
+  img {
+    width: 10%;
+    padding-bottom: 1px;
+    padding-top: 1px;
+  }
 }
 </style>

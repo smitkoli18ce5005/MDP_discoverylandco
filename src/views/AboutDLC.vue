@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutdlc">
+  <div class="main-aboutdlc-div">
     <Header />
   </div>
 </template>
@@ -15,19 +15,15 @@ import Header from '@/components/Header.vue';
     Footer
   },
 })
-export default class AboutDLC extends Vue {
+export default class Experiences extends Vue {
 }
 </script>
 
 <style lang="scss">
-body{
-    background-image: none;
-    background-color: #000000;
-}
-.aboutdlc{
+.main-aboutdlc-div{
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 </style>

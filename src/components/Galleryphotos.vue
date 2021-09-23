@@ -1,48 +1,64 @@
 <template>
     <div class="gallery-photo">
-        <div class="photo-frame">
+        <div v-for="gallery in galleryObjectList" v-bind:key="gallery.galleryText" class="photo-frame">
             <figure class="photos">
-                <img src="../assets/outdoor-pursuits.jpg" alt="outdoor-pursuits">
+                <img :src="getImgURL(gallery.pic)" alt="outdoor-pursuits">
             </figure>
-            <h1>Outdoor Pursuits</h1>
+            <h1 v-text="gallery.galleryText"></h1>
         </div>
-        <div class="photo-frame">
-            <figure class="photos">
-                <img src="../assets/golf.jpg" alt="outdoor-pursuits">
-            </figure>
-            <h1>Golf</h1>
-        </div>
-        <div class="photo-frame">
-            <figure class="photos">
-                <img src="../assets/lifestyle.jpeg" alt="outdoor-pursuits">
-            </figure>
-            <h1>Lifestyle</h1>
-        </div>
-        <div class="photo-frame">
-            <figure class="photos">
-                <img src="../assets/landscapes.jpg" alt="outdoor-pursuits">
-            </figure>
-            <h1>Landscapes</h1>
-        </div>
-        <div class="photo-frame">
-            <figure class="photos">
-                <img src="../assets/clubhouses.jpg" alt="outdoor-pursuits">
-            </figure>
-            <h1>Clubhouses</h1>
-        </div>
-        <div class="photo-frame">
-            <figure class="photos">
-                <img src="../assets/wellness.jpg" alt="outdoor-pursuits">
-            </figure>
-            <h1>Wellness</h1>
-        </div>
-    </div>
+    </div> 
 </template>
+
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+
+@Options({
+})
+export default class Galleryphotos extends Vue {
+    private readonly galleryObjectList = [
+        {
+            id: 1,
+            pic: 'outdoor-pursuits.jpg', 
+            galleryText: 'Outdoor Pursuits'
+        },
+        {
+            id: 2,
+            pic: 'golf.jpg', 
+            galleryText: 'Golf'
+        },
+        {
+            id: 3,
+            pic: 'lifestyle.jpeg', 
+            galleryText: 'Lifestyle'
+        },
+        {
+            id: 4,
+            pic: 'landscapes.jpg', 
+            galleryText: 'Landscapes'
+        },
+        {
+            id: 5,
+            pic: 'clubhouses.jpg', 
+            galleryText: 'Clubhouses'
+        },
+        {
+            id: 6,
+            pic: 'wellness.jpg', 
+            galleryText: 'Wellness'
+        },
+    ]
+    private getImgURL(pic: string): string{
+        return require('../assets/Gallery/' +pic)
+    }
+}
+</script>
+
 <style lang="scss">
     .gallery-photo{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         position: relative;
+        width: 100vw;
     }
     .photos{
         padding-top: 65%;

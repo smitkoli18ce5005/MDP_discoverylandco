@@ -32,6 +32,6 @@ export default class Gallery extends Vue {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
   }
 </style>
