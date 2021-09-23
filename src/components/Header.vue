@@ -7,7 +7,7 @@
       <router-link to="/experiences" v-text="routeList[2]"></router-link>
       <router-link to="/gallery" v-text="routeList[3]"></router-link>
       <router-link to="/press" v-text="routeList[4]"></router-link>
-      <a href="/">&#x2630;</a>
+      <a href="/" style="margin-left:3rem;">&#x2630;</a>
       <!--<button>options</button>-->
       </div>
     </div>
@@ -48,23 +48,28 @@ $whiteColor: #ffffff;
   padding: 55px;
   line-height: 1.2rem;
   letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
   img {
-    width: 25%;
+    width: 30%;
     padding-bottom: 1px;
     padding-top: 1px;
+  }
+  a{
+    width: max-content
   }
 }
 .navigation{
   @include flexRow();
-  flex-basis: 80%;
+  align-items: flex-end;
 }
 .navigation a{
-color: $whiteColor;
-    text-decoration: none;
-    &.router-link-exact-active {
+  margin-right: 3rem;
+  color: $whiteColor;
+  text-decoration: none;
+  font-family: sans-serif;
+  &.router-link-exact-active {
       border-bottom: 1px solid $whiteColor;
-    }
+  }
 }
 </style>

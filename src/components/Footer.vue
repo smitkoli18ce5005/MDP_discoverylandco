@@ -108,25 +108,23 @@ export default class Footer extends Vue {
   justify-content: space-between;
 }
 .footer-div {
-  position: absolute;
-  width: 100vw;
-  left: 0;
   background-color: #161f1e;
   z-index: -1;
   padding: 5%;
+  font-family: sans-serif;
 }
 footer {
   @include flexProperty(column);
-  flex-wrap: wrap;
-  width: 80vw;
-  padding: 1%;
-  margin-left: 5%;
+  max-width: 100rem;
+  padding-top: 1%;
+  margin-left: auto;
+  margin-right: auto
 }
 .footer-content {
   @include flexProperty(row);
 }
 footer .footer-content img {
-  width: 5%;
+  width: 3%;
   height: 5%;
   padding: 1%;
   margin-top: 1%;
@@ -142,6 +140,7 @@ ul {
 li {
   padding: 0.9rem;
   line-height: 0.9;
+  letter-spacing: 2px;
 }
 footer p {
   padding: 1%;

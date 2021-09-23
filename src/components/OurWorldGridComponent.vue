@@ -145,8 +145,8 @@ export default class OurWorldGridComponent extends Vue {
     grid-gap: 3rem 1rem;
     padding-top: 10%;
     padding-bottom: 5%;
-    margin-left: 1%;
-    margin-right: 2%;
+    margin-left: 1.5%;
+    margin-right: 1%;
 }
 .photo-grid{
     display: flex;
