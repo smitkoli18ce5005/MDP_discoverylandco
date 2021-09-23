@@ -1,6 +1,7 @@
 <template>
   <div class="main-press-div">
     <Header />
+    <Footer />
   </div>
 </template>
 

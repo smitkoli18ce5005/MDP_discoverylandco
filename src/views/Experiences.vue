@@ -1,6 +1,7 @@
 <template>
   <div class="main-experiences-div">
     <Header />
+    <Footer />
   </div>
 </template>
 

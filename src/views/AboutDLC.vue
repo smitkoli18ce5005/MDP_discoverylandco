@@ -1,6 +1,7 @@
 <template>
   <div class="main-aboutdlc-div">
     <Header />
+    <Footer />
   </div>
 </template>
 

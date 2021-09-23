@@ -108,6 +108,9 @@ export default class Footer extends Vue {
   justify-content: space-between;
 }
 .footer-div {
+  position: fixed;
+  bottom: 0;
+  width: 90vw;
   background-color: #161f1e;
   z-index: -1;
   padding: 5%;
