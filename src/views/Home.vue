@@ -2,6 +2,7 @@
   <div class="main-home-div">
     <Header />
     <HomeHeader />
+    <WelcomeOurWorlds />
     <Footer />
   </div>
 </template>
@@ -10,12 +11,14 @@
 import { Options, Vue } from 'vue-class-component';
 import Header from '@/components/Header.vue';
 import HomeHeader from '@/components/HomeHeader.vue';
+import WelcomeOurWorlds from '@/components/WelcomeOurWorlds.vue';
 import Footer from '@/components/Footer.vue';
 
 @Options({
   components: {
     Header,
     HomeHeader,
+    WelcomeOurWorlds,
     Footer
   },
 })
