@@ -54,4 +54,45 @@ export default class Galleryheader extends Vue {
     margin-right: auto;
     width: 100%;
 }
+
+@media screen and (max-width: 1200px) {   
+    .gallery-header-text h1{
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gallery-header-text h1{
+        font-size: 66px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-header-text h1{
+        font-size: 55px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+   .gallery-header-text h1{
+        font-size: 45px;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .gallery-header-text h1{
+        font-size: 40px;
+    }
+} 
+
+@media screen and (max-width: 320px) {
+    .gallery-header{
+        height: 100vh;
+    }
+    .gallery-header-text h1{
+        font-size: 30px;
+        padding-top: 10%;
+    }
+} 
 </style>

@@ -94,9 +94,17 @@ $whiteColor: #ffffff;
       }
     }
   }
+  @media (max-width: 576px) {
+    #nav img {
+      width: 100px;
+    }
+  }
   @media (max-width: 320px) {
     #nav{
       padding-top: 20px;
+    }
+    #nav img {
+      width: 60px;
     }
   }
 </style>

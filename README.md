@@ -7,3 +7,4 @@
 * Our worlds page
 * Bug fix for Header and Footer
 * Made Our Worlds page responsive
+* Made Gallery page responsive

@@ -159,6 +159,14 @@ a {
     border-bottom: 1px solid #ffffff;
   }
 }
+@media screen and (max-width: 1200px) {   
+    h1{
+        padding: 2.5rem;
+    }
+    footer a {
+      font-size: 0.75rem;
+    }
+}
 
 @media (max-width: 992px) {
     .footer-content {
@@ -175,7 +183,7 @@ a {
       padding-left: 5%;
     }
     footer a {
-      font-size: 0.75rem;
+      letter-spacing: 1px;
     }
     li{
       padding: 0.5rem;

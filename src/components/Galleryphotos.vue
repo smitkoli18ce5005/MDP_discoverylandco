@@ -80,8 +80,56 @@ export default class Galleryphotos extends Vue {
         font-weight: 200;
         text-align: center;
         white-space: nowrap;
-        padding: 3rem 1.5rem;
+        padding: 3rem;
         font-size: 24px;
         line-height: 1.2;
     }
+
+
+@media screen and (max-width: 1200px) {   
+    h1{
+        padding: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+   h1{
+       font-size: 20px;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-photo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1{
+        font-size: 18px;
+        padding: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+   .gallery-photo{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h1{
+        font-size: 16px;
+        padding: 1rem;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    h1{
+        padding: 0.9rem;
+    }
+} 
+
+@media screen and (max-width: 320px) {
+    h1{
+        font-size: 14px;
+        padding: 0.9rem;
+    }
+} 
 </style>
