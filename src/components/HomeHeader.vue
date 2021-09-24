@@ -1,14 +1,114 @@
 <template>
     <div class="home-header">
         <video src="../assets/Home/homeHeaderVideo.mp4" data-length="" muted="" loop="" autoplay="" playsinline=""></video>
+        <div class="home-header-text">
+            <div class="home-header-title">
+              <h1>Discover<br>Your world</h1>
+            </div>
+            <div class="home-banner">
+              <div class="banner-text">
+                <h3>North Shore Preserve</h3>
+                <p>Scroll to explore</p>
+              </div>
+              <button type="button" class="round-button">&#8595;</button>
+            </div>
+        </div>
     </div>
+    
 </template>
 
 <style lang="scss">
-video{
+@mixin position($pos){
+    position: $pos;
+    top: 0;
+    left: 0;
+}
+.hero-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 1px solid hsla(0,0%,100%,.5);
+}
+.home-header{
+    @include position(relative);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.home-header video{
   object-fit: cover;
   width: 100vw;
   height: 100vh;
-  opacity: 1;
+  background: #222;
+  @include position(absolute);
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
+.home-header-text{
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.home-header-title{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.home-header-title h1{
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 100px;
+    letter-spacing: 8px;
+    line-height: 1;
+    font-family: gt-sectra;
+    margin-left: 15%;
+    margin-top: 14%;
+}
+.home-banner{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.round-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    border: 1px solid hsla(0,0%,100%,.5);
+    outline: 0;
+    background-color: transparent;
+    font-size: 3rem;
+    color: #ffffff;
+}
+.banner-text{
+  font-family: sans-serif;
+  h3{
+    font-size: 1.2rem;
+  }
+  p{
+      display: block;
+      font-size: .9rem;
+      color: hsla(0,0%,100%,.65);
+  }
+} 
+
 </style>
