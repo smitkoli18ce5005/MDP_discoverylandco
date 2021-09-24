@@ -6,4 +6,4 @@
 * Footer for discoverylandco
 * Our worlds page
 * Bug fix for Header and Footer
-* Made gallery page responsive
+* Made Our Worlds page responsive
