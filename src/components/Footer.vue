@@ -196,4 +196,18 @@ a {
       width: 40px;
     }
   }
+
+  @media (max-width: 320px) {
+    ul{
+      text-align: left;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    footer a {
+      font-size: 0.6rem;
+    }
+    footer p{
+      font-size: 0.6rem;
+    }
+  }
 </style>

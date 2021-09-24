@@ -29,7 +29,5 @@ export default class Gallery extends Vue {
   left: 0;
   top: 0;
   width: 100vw;
-  padding: 0;
-  margin: 0;
 }
 </style>

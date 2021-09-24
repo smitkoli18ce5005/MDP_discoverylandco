@@ -86,8 +86,6 @@ $whiteColor: #ffffff;
       display: none;
     }
   }
-  @media (max-width: 992px) {
-  }
   @media (max-width: 768px) {
     #nav{
       width: 100vw;
@@ -96,6 +94,9 @@ $whiteColor: #ffffff;
       }
     }
   }
-  @media (max-width: 576px) {
+  @media (max-width: 320px) {
+    #nav{
+      padding-top: 20px;
+    }
   }
 </style>

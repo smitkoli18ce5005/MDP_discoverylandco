@@ -244,5 +244,10 @@ export default class OurWorldGridComponent extends Vue {
     .our-world-grid {
       padding-top: 45%;
     } 
+    .photo-grid {
+        h1, p{
+            font-size: 0.7rem;
+        }
+    }
   } 
 </style>
