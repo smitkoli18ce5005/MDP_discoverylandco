@@ -6,7 +6,9 @@
         <div class="footer-navigation">
           <ul>
             <li><p v-text="contacts[0]"></p></li>
-            <li v-text="contacts[1]"></li>
+            <li>
+              <a href=""><b v-text="contacts[1]"></b></a>
+            </li>
             <li>
               <a href=""><u v-text="contacts[2]"></u></a>
             </li>
@@ -33,7 +35,7 @@
           </ul>
         </div>
       </div>
-      <p v-text="copyrightText"></p>
+      <p class="copy" v-text="copyrightText"></p>
     </footer>
   </div>
 </template>
@@ -108,9 +110,6 @@ export default class Footer extends Vue {
   justify-content: space-between;
 }
 .footer-div {
-  position: fixed;
-  bottom: 0;
-  width: 90vw;
   background-color: #161f1e;
   z-index: -1;
   padding: 5%;
@@ -160,4 +159,41 @@ a {
     border-bottom: 1px solid #ffffff;
   }
 }
+
+@media (max-width: 992px) {
+    .footer-content {
+      @include flexProperty(column);
+    }
+    li{
+      padding-left: 0;
+    }
+    footer .footer-content img{
+      padding-left: 5%;
+      padding-bottom: 5%;
+    }
+    .copy{
+      padding-left: 5%;
+    }
+    footer a {
+      font-size: 0.75rem;
+    }
+    li{
+      padding: 0.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    footer a {
+      letter-spacing: 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .footer-navigation {
+      @include flexProperty(column);
+    }
+    footer .footer-content img {
+      width: 40px;
+    }
+  }
 </style>

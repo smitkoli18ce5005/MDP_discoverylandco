@@ -16,5 +16,8 @@ body{
 #app {
   font-family: gt-sectra;
   color: #ffffff;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 </style>

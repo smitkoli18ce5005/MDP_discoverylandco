@@ -59,7 +59,6 @@ export default class Galleryphotos extends Vue {
         grid-template-columns: repeat(3, 1fr);
         position: relative;
         width: 100vw;
-        margin-bottom: 50vh;
         background-color: #111;
     }
     .photos{

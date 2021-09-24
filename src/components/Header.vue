@@ -1,17 +1,20 @@
 <template>
-    <div id="nav">
+<div class="header-div">
+  <div id="nav">
       <a href="/"><img src='../assets/logo.png' alt="Logo Image"></a>
       <div class="navigation">
-      <router-link to="/about-dlc" v-text="routeList[0]"></router-link>
-      <router-link to="/our-worlds" v-text="routeList[1]"></router-link>
-      <router-link to="/experiences" v-text="routeList[2]"></router-link>
-      <router-link to="/gallery" v-text="routeList[3]"></router-link>
-      <router-link to="/press" v-text="routeList[4]"></router-link>
-      <a href="/" style="margin-left:3rem;">&#x2630;</a>
+      <router-link class="routes" to="/about-dlc" v-text="routeList[0]"></router-link>
+      <router-link class="routes" to="/our-worlds" v-text="routeList[1]"></router-link>
+      <router-link class="routes" to="/experiences" v-text="routeList[2]"></router-link>
+      <router-link class="routes" to="/gallery" v-text="routeList[3]"></router-link>
+      <router-link class="routes" to="/press" v-text="routeList[4]"></router-link>
+      <a href="/" style="margin-left:3rem;margin-right:0">&#x2630;</a>
       <!--<button>options</button>-->
       </div>
     </div>
   <router-view/>
+</div>
+    
 </template>
 
 <script lang="ts">
@@ -37,15 +40,19 @@ $whiteColor: #ffffff;
   justify-content: space-between;
   align-items: center
 }
-
-#nav {
-  @include flexRow();
+.header-div{
+  width: 100vw;
   position: absolute;
   z-index: 1000;
-  width: 80%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  padding: 55px;
+  
+}
+#nav {
+  @include flexRow();
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 55px;
+  padding-bottom: 55px;
   line-height: 1.2rem;
   letter-spacing: 1px;
   font-size: 1rem;
@@ -62,6 +69,7 @@ $whiteColor: #ffffff;
 .navigation{
   @include flexRow();
   align-items: flex-end;
+  padding-right: 5%;
 }
 .navigation a{
   margin-right: 3rem;
@@ -72,4 +80,22 @@ $whiteColor: #ffffff;
       border-bottom: 1px solid $whiteColor;
   }
 }
+
+  @media (max-width: 1200px) {   
+    .routes{
+      display: none;
+    }
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+    #nav{
+      width: 100vw;
+      a{
+        padding-left: 5%;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+  }
 </style>
