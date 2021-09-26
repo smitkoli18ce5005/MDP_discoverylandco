@@ -8,3 +8,4 @@
 * Bug fix for Header and Footer
 * Made Our Worlds page responsive
 * Made Gallery page responsive
+* Added underline effect on hover for navigation links

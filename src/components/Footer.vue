@@ -5,7 +5,7 @@
         <img src="../assets/onlylogo.png" alt="Footer Logo" />
         <div class="footer-navigation">
           <ul>
-            <li><p v-text="contacts[0]"></p></li>
+            <li class="lighter-font" v-text="contacts[0]"></li>
             <li>
               <a href=""><b v-text="contacts[1]"></b></a>
             </li>
@@ -13,7 +13,8 @@
               <a href=""><u v-text="contacts[2]"></u></a>
             </li>
           </ul>
-          <ul>
+          <div class="footer-routes">
+            <ul>
             <li v-for="routes in routesArray" v-bind:key="routes.routeText">
               <router-link
                 :to="routes.to"
@@ -33,6 +34,7 @@
               ></a>
             </li>
           </ul>
+          </div>
         </div>
       </div>
       <p class="copy" v-text="copyrightText"></p>
@@ -135,6 +137,17 @@ footer .footer-content img {
   @include flexProperty(row);
   flex-basis: 50%;
   align-items: flex-start;
+  a:after {
+    transition: all ease-in-out .3s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+a:hover:after{
+  width: 100%;
+}
 }
 ul {
   list-style-type: none;
@@ -143,14 +156,16 @@ li {
   padding: 0.9rem;
   line-height: 0.9;
   letter-spacing: 2px;
+  max-width: max-content;
 }
-footer p {
+footer p, .lighter-font {
   padding: 1%;
   margin-bottom: 0;
   margin-top: 0;
   font-size: 0.75rem;
   opacity: 0.75;
   color: #777;
+  padding-left: 5%;
 }
 a {
   color: #ffffff;
@@ -158,6 +173,9 @@ a {
   &.router-link-exact-active {
     border-bottom: 1px solid #ffffff;
   }
+}
+.footer-routes{
+  display: flex;
 }
 @media screen and (max-width: 1200px) {   
     h1{
@@ -214,7 +232,7 @@ a {
     footer a {
       font-size: 0.6rem;
     }
-    footer p{
+    footer p, .lighter-font {
       font-size: 0.6rem;
     }
   }

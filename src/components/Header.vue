@@ -70,14 +70,25 @@ $whiteColor: #ffffff;
   @include flexRow();
   align-items: flex-end;
   padding-right: 5%;
-}
-.navigation a{
-  margin-right: 3rem;
-  color: $whiteColor;
-  text-decoration: none;
-  font-family: sans-serif;
-  &.router-link-exact-active {
-      border-bottom: 1px solid $whiteColor;
+  .routes{
+    margin-right: 3rem;
+    color: $whiteColor;
+    text-decoration: none;
+    font-family: sans-serif;
+    &.router-link-exact-active {
+        border-bottom: 1px solid $whiteColor;
+    }
+  }
+  .routes:after {
+    transition: all ease-in-out .3s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+  }
+  .routes:hover:after{
+    width: 100%;
   }
 }
 
