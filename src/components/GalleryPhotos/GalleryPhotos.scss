@@ -1,0 +1,78 @@
+.gallery-photo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    width: 100vw;
+    background-color: #111;
+}
+.photos{
+    padding-top: 65%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+.photos img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h1{
+    font-family: gt-sectra;
+    font-weight: 200;
+    text-align: center;
+    white-space: nowrap;
+    padding: 3rem;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+
+@media screen and (max-width: 1200px) {   
+h1{
+    padding: 2.5rem;
+}
+}
+
+@media screen and (max-width: 992px) {
+h1{
+   font-size: 20px;
+    padding: 2rem;
+}
+}
+
+@media screen and (max-width: 768px) {
+.gallery-photo{
+    grid-template-columns: repeat(2, 1fr);
+}
+h1{
+    font-size: 18px;
+    padding: 1.5rem;
+}
+}
+
+
+@media screen and (max-width: 576px) {
+.gallery-photo{
+    grid-template-columns: repeat(1, 1fr);
+}
+h1{
+    font-size: 16px;
+    padding: 1rem;
+}
+} 
+
+@media screen and (max-width: 480px) {
+h1{
+    padding: 0.9rem;
+}
+} 
+
+@media screen and (max-width: 320px) {
+h1{
+    font-size: 14px;
+    padding: 0.9rem;
+}
+} 

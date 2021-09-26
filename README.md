@@ -9,3 +9,4 @@
 * Made Our Worlds page responsive
 * Made Gallery page responsive
 * Added underline effect on hover for navigation links
+* Code refactoring with separate TS, sass files

@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../views/Home.vue'
-import AboutDLC from '../views/AboutDLC.vue'
-import OurWorlds from '../views/OurWorlds.vue'
-import Experiences from '../views/Experiences.vue'
-import Gallery from '../views/Gallery.vue'
-import Press from '../views/Press.vue'
+import Home from '../views/Home/Home.vue'
+import AboutDLC from '../views/AboutDLC/AboutDLC.vue'
+import OurWorlds from '../views/OurWorlds/OurWorlds.vue'
+import Experiences from '../views/Experiences/Experiences.vue'
+import Gallery from '../views/Gallery/Gallery.vue'
+import Press from '../views/Press/Press.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
