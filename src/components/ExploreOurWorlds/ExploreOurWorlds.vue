@@ -10,6 +10,19 @@
                     <button>&#8594;</button>
                 </div>
          </div>
+        <div class="slider">
+            <div class="slider-track" v-for="items in ourWorldList" :key="items.title">
+                <div class="slide">
+                    <div class="image-holder">
+                        <img :src="getImgURL(items.pic)">
+                    </div>
+                    <div class="img-description">
+                        <span class = "img-title" v-text="items.title"></span>
+                        <span class = "img-location" v-text="items.location"></span> 
+                    </div>
+                </div>
+            </div>
+      </div>
     </div>
 </template>
 
