@@ -1,5 +1,5 @@
 <template>
-    <div class="welcome-our-worlds" style="Background-image: url('@/assets/Home/background_image.jpg')">
+    <div class="welcome-our-worlds">
         <div class="welcome-grid">
             <div class="div-image1">
                 <div class="welcome-text">

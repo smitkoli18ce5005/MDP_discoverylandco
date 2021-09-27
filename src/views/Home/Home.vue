@@ -3,6 +3,7 @@
     <Header />
     <HomeHeader />
     <WelcomeOurWorlds />
+    <ExploreOurWorlds />
     <Footer />
   </div>
 </template>
