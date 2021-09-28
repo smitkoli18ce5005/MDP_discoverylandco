@@ -43,6 +43,7 @@ $whiteColor: #ffffff;
     font-family: sans-serif;
     &.router-link-exact-active {
         border-bottom: 1px solid $whiteColor;
+        pointer-events: none;
     }
   }
   .routes:after {

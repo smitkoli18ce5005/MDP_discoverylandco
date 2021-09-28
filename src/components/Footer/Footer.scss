@@ -64,6 +64,7 @@
     text-decoration: none;
     &.router-link-exact-active {
       border-bottom: 1px solid #ffffff;
+      pointer-events: none;
     }
   }
   .footer-routes{
