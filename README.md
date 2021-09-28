@@ -1,6 +1,6 @@
 # Discoverylandco in VueJS
 
-## Project setup
+## What's done
 * Header for discoverylandco
 * Gallery page
 * Footer for discoverylandco

@@ -20,4 +20,5 @@
         </a>
     </div>
 </template>
+
 <script type='module' src='./HomeFooter.ts'></script>
