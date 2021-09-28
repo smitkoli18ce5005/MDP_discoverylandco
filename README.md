@@ -12,3 +12,4 @@
 * Code refactoring with separate TS, sass files
 * Explore our worlds on home page
 * Lands of discovery on home page
+* Home footer on home page
