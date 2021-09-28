@@ -1,0 +1,11 @@
+.home-footer-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    .home-footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

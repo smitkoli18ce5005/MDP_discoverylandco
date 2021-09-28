@@ -4,6 +4,8 @@
     <HomeHeader />
     <WelcomeOurWorlds />
     <ExploreOurWorlds />
+    <LandsOfDiscovery />
+    <HomeFooter />
     <Footer />
   </div>
 </template>
