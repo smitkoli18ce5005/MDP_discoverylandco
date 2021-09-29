@@ -16,3 +16,4 @@
 * About DLC header on About DLC page
 * Our mission section on About DLC page
 * Reusable full image component for About DLC page
+* Reusable Carousel component for Home and About DLC page

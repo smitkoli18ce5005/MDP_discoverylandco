@@ -3,7 +3,7 @@
     <Header />
     <HomeHeader />
     <WelcomeOurWorlds />
-    <ExploreOurWorlds />
+    <Carousel v-bind:content="headings" v-bind:dataList="carouselList" v-bind:calledBy="'Home'" />
     <LandsOfDiscovery />
     <HomeFooter />
     <Footer />

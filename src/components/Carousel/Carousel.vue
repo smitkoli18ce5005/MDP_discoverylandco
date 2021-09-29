@@ -1,9 +1,9 @@
 <template>
-    <div class="explore-our-worlds">
-         <div class="explore-our-worlds-banner">
+    <div class="Carousel">
+         <div class="Carousel-banner">
                 <div>
-                    <h3>Explore</h3>
-                    <p>Our Worlds</p>
+                    <h3 v-text="content[0]"></h3>
+                    <p v-if="content[1]" v-text="content[1]"></p>
                 </div>
                 <div class="button-pair">
                     <button class="first-button">&#8592;</button>
@@ -11,10 +11,11 @@
                 </div>
          </div>
         <div class="slider">
-            <div class="slider-track" v-for="items in ourWorldList" :key="items.title">
+            <div class="slider-track" v-for="items in dataList" :key="items.title">
                 <div class="slide">
                     <div class="image-holder">
-                        <img :src="getImgURL(items.pic)">
+                        <img v-if="calledBy == 'Home'" :src="getForHome(items.pic)">
+                        <img v-else-if="calledBy == 'AboutDLC'" :src="getForAboutDLC(items.pic)">
                     </div>
                     <div class="img-description">
                         <span class = "img-title" v-text="items.title"></span>
@@ -26,4 +27,4 @@
     </div>
 </template>
 
-<script type='module' src='./ExploreOurWorlds.ts'></script>
+<script type='module' src='./Carousel.ts'></script>

@@ -4,6 +4,7 @@
     <AboutDlcHeader />
     <OurMission />
     <FullImage v-bind:picName="picsArray[0]" />
+    <Carousel v-bind:content="headings" v-bind:dataList="carouselList" v-bind:calledBy="'AboutDLC'" />
     <Footer />
   </div>
 </template>
