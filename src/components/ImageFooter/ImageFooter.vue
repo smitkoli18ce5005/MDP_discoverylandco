@@ -1,6 +1,7 @@
 <template>
     <div class="image-footer-div">
         <img v-if="footerData.calledBy = 'AboutDLC'" :src="getForAboutDLC(footerData.picName)" alt="">
+        <img v-if="footerData.calledBy = 'Experiences'" :src="getForExperiences(footerData.picName)" alt="">
         <div class="image-footer-content">
             <h1 v-text="footerData.heading"></h1>
             <button class="btn btn-border-1">Explore</button>

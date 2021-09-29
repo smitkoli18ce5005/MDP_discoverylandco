@@ -21,9 +21,9 @@ import Footer from '@/components/Footer/Footer.vue';
   }
 })
 export default class AboutDLC extends Vue {
-  readonly picsArray = ['full1.jpg', 'full2.jpg', 'full3.jpg'];
-  readonly headings = ['The Discovery Difference'];
-  readonly carouselList = [
+  private readonly picsArray = ['full1.jpg', 'full2.jpg', 'full3.jpg'];
+  private readonly headings = ['The Discovery Difference'];
+  private readonly carouselList = [
     {
       pic: "p1.jpg",
       title: "Focus on family",
@@ -75,16 +75,16 @@ export default class AboutDLC extends Vue {
       location: `Through our in-house services, Discovery Builders and Discovery Design, we offer turn-key homes for families that embody modern aesthetics while staying true to classic principles.`,
     }
   ];
-  readonly gridPicsArray1 = ['g1.jpg', 'g2.jpg'];
-  readonly gridHeading1 = ['Discovery Design'];
+  private readonly gridPicsArray1 = ['g1.jpg', 'g2.jpg'];
+  private readonly gridHeading1 = ['Discovery Design'];
   private readonly gridPara1: string[] = ['See the beauty in every corner of your new, bespoke', 
     'home away from home. From fabrics and furniture', 
     'pieces to floorplans, our professional designers will', 
     'collaborate closely with you to create an interior living',
     'space which reflects your style and unique tastes as',
     'well as perfectly complementing your lifestyle.'];
-  readonly gridPicsArray2 = ['g3.jpg', 'g4.jpg'];
-  readonly gridHeading2 = ['Discovery Builders'];
+  private readonly gridPicsArray2 = ['g3.jpg', 'g4.jpg'];
+  private readonly gridHeading2 = ['Discovery Builders'];
   private readonly gridPara2: string[] = ['Every Discovery property is wonderfully in-tune with its', 
     'natural surroundings - a harmonious blend of the', 
     'architecturally impressive with the environmentally', 
@@ -94,6 +94,32 @@ export default class AboutDLC extends Vue {
   private readonly dataForFooter = {
     heading: 'Our Worlds',
     picName: 'footerImage.jpg',
+    calledBy: 'AboutDLC'
+  }
+  private readonly ourMissionDataObject = {
+    heading: ['Our Mission'],
+    imageName: 'image1.jpg',
+    ourMissionHeaderPara: [
+        'Founded in 1994 by Mike Meldman, Discovery Land Company is a',
+        'US-based real estate developer and operator of private residential',
+        'club communities and resorts with a world-renowned portfolio of',
+        'domestic and international properties.'
+    ],
+    ourMissionPara: [[
+      'We don’t build buildings, but rather we build settings',
+      'where families can create intergenerational memories',
+      'and enrich their lives in exquisite and untouched',
+      'sanctuaries. Everything we do is driven by the',
+      'fundamental desire to create spaces where families can',
+      'be together.'
+    ],[
+        'These settings offer a relaxed and comfortable sense of',
+        'community featuring outstanding clubhouses,',
+        'incredible residential offerings, premier golf courses,',
+        'welcoming staff, world-class culinary offerings and our',
+        'custom Outdoor Pursuits program; all offering the',
+        'highest of service standards to enrich your experience.'
+    ]],
     calledBy: 'AboutDLC'
   }
 }

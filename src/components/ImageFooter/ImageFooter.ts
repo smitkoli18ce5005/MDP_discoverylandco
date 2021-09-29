@@ -12,4 +12,7 @@ export default class GridLayoutOne extends Vue {
     private getForAboutDLC(pic: string): string {
         return require("@/assets/AboutDLC/" + pic);
     }  
+    private getForExperiences(pic: string): string {
+        return require("@/assets/Experiences/" + pic);
+    } 
 }
