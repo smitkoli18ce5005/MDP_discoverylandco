@@ -12,7 +12,7 @@
     left: 0;
     top: 0;
     background-size: contain;
-    background-position: 100%;
+    background-position: 105%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     z-index: 1;
@@ -30,7 +30,6 @@
         "content img1"
         "img2 img1";
     padding-top: 5%;
-    background-color: #f3f3f3;
     overflow: hidden;
 }
 .welcome-grid-right{
@@ -46,13 +45,20 @@
         "img1 content"
         "img1 img2";
     padding-top: 5%;
-    background-color: #f3f3f3;
     overflow: hidden;
 }
-.div-image2{
+.div-image2-left{
     grid-area: img2;
     margin-top: auto;
     object-fit: cover;
+    margin-left: auto;
+    width: 100%;
+}
+.div-image2-right{
+    grid-area: img2;
+    margin-top: auto;
+    object-fit: cover;
+    margin-right: auto;
     width: 100%;
 }
 .welcome-text-left{
@@ -94,9 +100,70 @@
     grid-area: img1;
     width: 100%;
     object-fit: cover;
+    height: 90%;
 }
 .div-image1-right{
     grid-area: img1;
     width: 100%;
+    height: 90%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 1500px) {   
+    .div-image1-left{
+        width: 90%;
+    }
+    .div-image2-left{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1200px) {   
+    .welcome-our-worlds{
+        padding-top: 10%;
+        height: 80vh;
+    }
+    .div-image1-left{
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .welcome-our-worlds{
+        height: max-content;
+    }
+    .welcome-grid-left{
+        grid-template-areas:
+            "content content"
+            "img1 img1"
+            "img2 img2";
+    }
+    .div-image1-left{
+        padding: 10%;
+        width: 80%;
+        height: 100%;
+    }
+    .div-image2-left{
+        padding-top: 20%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+} 
+
+@media screen and (max-width: 480px) {
+
+} 
+
+@media screen and (max-width: 320px) {
+ 
+} 
