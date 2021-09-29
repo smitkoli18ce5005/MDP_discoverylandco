@@ -2,16 +2,17 @@
     background-color: #ffffff;
     height: 100vh;
     width: 100vw;
-    .border-image{
-        width: 90vw;
+    img{
         height: 100vh;
+        object-fit: cover;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+    .border-image{
+        width: 90vw;
+    }
     .full-image{
         width: 100vw;
-        height: 100vh;
-        object-fit: cover;
     }
 }
