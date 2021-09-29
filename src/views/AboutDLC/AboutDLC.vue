@@ -3,6 +3,7 @@
     <Header />
     <AboutDlcHeader />
     <OurMission />
+    <FullImage v-bind:picName="picsArray[0]" />
     <Footer />
   </div>
 </template>
