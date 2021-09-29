@@ -13,4 +13,5 @@
 * Explore our worlds on home page
 * Lands of discovery on home page
 * Home footer on home page
-* About DLC header on  About DLC page
+* About DLC header on About DLC page
+* Our mission section on About DLC page

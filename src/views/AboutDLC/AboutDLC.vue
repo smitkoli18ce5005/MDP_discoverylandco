@@ -2,6 +2,7 @@
   <div class="main-aboutdlc-div">
     <Header />
     <AboutDlcHeader />
+    <OurMission />
     <Footer />
   </div>
 </template>
