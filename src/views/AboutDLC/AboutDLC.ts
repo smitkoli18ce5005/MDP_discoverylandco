@@ -6,6 +6,7 @@ import OurMission from '@/components/OurMission/OurMission.vue';
 import FullImage from '@/components/FullImage/FullImage.vue';
 import Carousel from '@/components/Carousel/Carousel.vue';
 import GridLayoutOne from '@/components/GridLayoutOne/GridLayoutOne.vue';
+import ImageFooter from '@/components/ImageFooter/ImageFooter.vue';
 import Footer from '@/components/Footer/Footer.vue';
 @Options({
   components: {
@@ -15,12 +16,13 @@ import Footer from '@/components/Footer/Footer.vue';
     FullImage,
     Carousel,
     GridLayoutOne,
+    ImageFooter,
     Footer
   }
 })
 export default class AboutDLC extends Vue {
   readonly picsArray = ['full1.jpg', 'full2.jpg', 'full3.jpg'];
-  readonly headings = ['The Discovery Difference']
+  readonly headings = ['The Discovery Difference'];
   readonly carouselList = [
     {
       pic: "p1.jpg",
@@ -74,19 +76,24 @@ export default class AboutDLC extends Vue {
     }
   ];
   readonly gridPicsArray1 = ['g1.jpg', 'g2.jpg'];
-  readonly gridHeading1 = ['Discovery Design']
+  readonly gridHeading1 = ['Discovery Design'];
   private readonly gridPara1: string[] = ['See the beauty in every corner of your new, bespoke', 
     'home away from home. From fabrics and furniture', 
     'pieces to floorplans, our professional designers will', 
     'collaborate closely with you to create an interior living',
     'space which reflects your style and unique tastes as',
-    'well as perfectly complementing your lifestyle.']
+    'well as perfectly complementing your lifestyle.'];
   readonly gridPicsArray2 = ['g3.jpg', 'g4.jpg'];
-  readonly gridHeading2 = ['Discovery Builders']
+  readonly gridHeading2 = ['Discovery Builders'];
   private readonly gridPara2: string[] = ['Every Discovery property is wonderfully in-tune with its', 
     'natural surroundings - a harmonious blend of the', 
     'architecturally impressive with the environmentally', 
     'sensitive. And your every expectation will be met, with',
     'our meticulous eye for detail matching outstanding',
-    'levels of craftsmanship and master building.']
+    'levels of craftsmanship and master building.'];
+  private readonly dataForFooter = {
+    heading: 'Our Worlds',
+    picName: 'footerImage.jpg',
+    calledBy: 'AboutDLC'
+  }
 }
