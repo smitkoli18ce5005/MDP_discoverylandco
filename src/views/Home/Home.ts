@@ -2,7 +2,7 @@ import './Home.scss'
 import { Options, Vue } from 'vue-class-component';
 import Header from '@/components/Header/Header.vue';
 import HomeHeader from '@/components/HomeHeader/HomeHeader.vue';
-import WelcomeOurWorlds from '@/components/WelcomeOurWorlds/WelcomeOurWorlds.vue';
+import GridLayoutOne from '@/components/GridLayoutOne/GridLayoutOne.vue';
 import Carousel from '@/components/Carousel/Carousel.vue';
 import LandsOfDiscovery from '@/components/LandsOfDiscovery/LandsOfDiscovery.vue';
 import HomeFooter from '@/components/HomeFooter/HomeFooter.vue';
@@ -12,7 +12,7 @@ import Footer from '@/components/Footer/Footer.vue';
   components: {
     Header,
     HomeHeader,
-    WelcomeOurWorlds,
+    GridLayoutOne,
     Carousel,
     LandsOfDiscovery,
     HomeFooter,
@@ -20,6 +20,8 @@ import Footer from '@/components/Footer/Footer.vue';
   },
 })
 export default class Home extends Vue {
+  readonly gridPicsArray = ['image1.jpg', 'image2.jpg']
+  readonly background = 'for-background'
   readonly headings = ['Explore', 'Our Worlds']
   readonly carouselList = [
     {
@@ -148,4 +150,12 @@ export default class Home extends Vue {
       location: `Scottsdale, Arizona`,
     },
   ];
+  
+  private readonly heading1: string[] = ['Welcome to', 'our world'];
+  private readonly para: string[] = ['Discover the unique atmosphere of our private', 'residential club communities. Once experienced. Never', 
+    'forgotten. This is classic, comfortable, modern living in', 
+    'nature’s most spectacular settings worldwide.', 
+    'Reassuringly exclusive. Generously welcoming. Find',
+    'your unique world – a place where families love to be;',
+    'creating unforgettable moments, together.']
 }

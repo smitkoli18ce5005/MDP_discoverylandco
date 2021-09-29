@@ -5,6 +5,7 @@ import AboutDlcHeader from '@/components/AboutDlcHeader/AboutDlcHeader.vue';
 import OurMission from '@/components/OurMission/OurMission.vue';
 import FullImage from '@/components/FullImage/FullImage.vue';
 import Carousel from '@/components/Carousel/Carousel.vue';
+import GridLayoutOne from '@/components/GridLayoutOne/GridLayoutOne.vue';
 import Footer from '@/components/Footer/Footer.vue';
 @Options({
   components: {
@@ -13,6 +14,7 @@ import Footer from '@/components/Footer/Footer.vue';
     OurMission,
     FullImage,
     Carousel,
+    GridLayoutOne,
     Footer
   }
 })
@@ -71,4 +73,20 @@ export default class AboutDLC extends Vue {
       location: `Through our in-house services, Discovery Builders and Discovery Design, we offer turn-key homes for families that embody modern aesthetics while staying true to classic principles.`,
     }
   ];
+  readonly gridPicsArray1 = ['g1.jpg', 'g2.jpg'];
+  readonly gridHeading1 = ['Discovery Design']
+  private readonly gridPara1: string[] = ['See the beauty in every corner of your new, bespoke', 
+    'home away from home. From fabrics and furniture', 
+    'pieces to floorplans, our professional designers will', 
+    'collaborate closely with you to create an interior living',
+    'space which reflects your style and unique tastes as',
+    'well as perfectly complementing your lifestyle.']
+  readonly gridPicsArray2 = ['g3.jpg', 'g4.jpg'];
+  readonly gridHeading2 = ['Discovery Builders']
+  private readonly gridPara2: string[] = ['Every Discovery property is wonderfully in-tune with its', 
+    'natural surroundings - a harmonious blend of the', 
+    'architecturally impressive with the environmentally', 
+    'sensitive. And your every expectation will be met, with',
+    'our meticulous eye for detail matching outstanding',
+    'levels of craftsmanship and master building.']
 }
