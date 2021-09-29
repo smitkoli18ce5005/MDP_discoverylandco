@@ -19,3 +19,4 @@
 * Reusable Carousel component for Home and About DLC page
 * Made welcome to our world reusable for home and about dlc and implemented it for about dlc
 * Reusable Image Footer component for About DLC page and Experience page
+* Reusable Video Header component for Home page and Experience page

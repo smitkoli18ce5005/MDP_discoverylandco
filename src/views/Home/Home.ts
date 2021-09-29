@@ -1,7 +1,7 @@
 import './Home.scss'
 import { Options, Vue } from 'vue-class-component';
 import Header from '@/components/Header/Header.vue';
-import HomeHeader from '@/components/HomeHeader/HomeHeader.vue';
+import VideoHeader from '@/components/VideoHeader/VideoHeader.vue';
 import GridLayoutOne from '@/components/GridLayoutOne/GridLayoutOne.vue';
 import Carousel from '@/components/Carousel/Carousel.vue';
 import LandsOfDiscovery from '@/components/LandsOfDiscovery/LandsOfDiscovery.vue';
@@ -11,7 +11,7 @@ import Footer from '@/components/Footer/Footer.vue';
 @Options({
   components: {
     Header,
-    HomeHeader,
+    VideoHeader,
     GridLayoutOne,
     Carousel,
     LandsOfDiscovery,
@@ -20,6 +20,12 @@ import Footer from '@/components/Footer/Footer.vue';
   },
 })
 export default class Home extends Vue {
+  readonly homeHeaderData = {
+    header : 'Discover',
+    subHeader: 'Your world',
+    videoUrl: 'homeHeaderVideo.mp4',
+    calledBy: 'Home'
+  }
   readonly gridPicsArray = ['image1.jpg', 'image2.jpg']
   readonly background = 'for-background'
   readonly headings = ['Explore', 'Our Worlds']
