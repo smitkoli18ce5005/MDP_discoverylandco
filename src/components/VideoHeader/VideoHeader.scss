@@ -61,7 +61,7 @@
         margin: 0;
         padding: 0;
         text-align: left;
-        font-size: 80px;
+        font-size: 6rem;
         line-height: 0.8;
     }
     h1{
@@ -104,5 +104,141 @@
       display: block;
       font-size: 1rem;
       color: hsla(0,0%,100%,.65);
+  }
+} 
+
+@media screen and (max-width: 1200px) {   
+  .home-header-title{
+    .home-header-text {
+      margin-left: 10%;
+      margin-top: 30%;
+      h1, p{
+          font-size: 5rem;
+          line-height: 0.8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-header-title{
+    .home-header-text {
+      margin-left: 5%;
+      margin-top: 40%;
+      h1, p{
+          font-size: 4.5rem;
+      }
+    }
+  }
+  .round-button{
+    height: 6rem;
+    width: 6rem;
+    font-size: 2.5rem;
+  }
+  .banner-text{
+    h3{
+      font-size: 1.1rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .home-header-title{
+    .home-header-text {
+      margin-left: 3%;
+      margin-top: 45%;
+      h1, p{
+          font-size: 4rem;
+      }
+    }
+  }
+  .round-button{
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 2rem;
+  }
+  .banner-text{
+    h3{
+      font-size: 1rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+  } 
+}
+
+
+@media screen and (max-width: 576px) {
+  .home-header-title{
+    .home-header-text {
+      margin-left: 2%;
+      margin-top: 50%;
+      h1, p{
+          font-size: 3.4rem;
+      }
+    }
+  }
+  .round-button{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+  }
+  .banner-text{
+    h3{
+      font-size: 0.9rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+  } 
+} 
+
+@media screen and (max-width: 480px) {
+  .home-header-title{
+    .home-header-text {
+      margin-left: 1%;
+      h1, p{
+          font-size: 2.2rem;
+      }
+    }
+  }
+  .round-button{
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+  }
+  .banner-text{
+    h3{
+      font-size: 0.85rem;
+    }
+    p{
+        font-size: 0.65rem;
+    }
+  } 
+} 
+
+@media screen and (max-width: 320px) {
+  .home-header-title{
+    .home-header-text {
+      h1, p{
+          font-size: 2rem;
+      }
+    }
+  }
+  .round-button{
+    height: 3rem;
+    width: 3rem;
+    font-size: 1rem;
+  }
+  .banner-text{
+    h3{
+      font-size: 0.7rem;
+    }
+    p{
+        font-size: 0.5rem;
+    }
   }
 } 
