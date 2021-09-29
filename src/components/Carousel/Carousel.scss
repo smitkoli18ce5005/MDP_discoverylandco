@@ -19,7 +19,6 @@
   margin-right: auto;
   h3,
   p {
-    font-size: 3rem;
     padding-top: 0;
     margin: 0;
     line-height: 1.1;
@@ -146,3 +145,133 @@ $animationSpeed: 25s;
     flex-direction: row;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .Carousel {
+    height: 90vh;
+  }   
+  .Carousel-banner{
+    width: 75%;
+  }
+  .image-holder {
+    width: 40vw;
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Carousel {
+    height: 80vh;
+  } 
+  .Carousel-banner{
+    width: 80%;
+  }
+  .image-holder {
+    height: 40vh;
+  }
+  .slider .slider-track {
+    margin-right: 5%;
+  }
+  .img-description {
+    padding: 2.5rem 2.5rem;
+    .img-title {
+      margin-bottom: 0.8rem;
+      font-size: 1.8rem;
+    }
+    .img-location {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+  .Carousel-banner .button-pair button {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Carousel-banner{
+    width: 85%;
+  }
+  .img-description {
+    padding: 2rem 2rem;
+    .img-title {
+      margin-bottom: 0.6rem;
+      font-size: 1.5rem;
+    }
+    .img-location {
+      font-size: 11px;
+    }
+  }
+  .Carousel-banner .button-pair button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .Carousel-banner{
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .button-pair{
+    padding-top: 5%;
+  }
+  .image-holder {
+    width: 50vw;
+  }
+  .img-description {
+    padding: 0;
+    .img-title {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .img-location {
+      font-size: 10px;
+    }
+  }
+  .Carousel-banner{
+    .button-pair button {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.4rem;
+    }
+    .button-pair .first-button {
+      margin-right: 1.2rem;
+    }
+  } 
+} 
+
+@media screen and (max-width: 480px) {
+  .slider .slider-track {
+    margin-right: 6%;
+  }
+  .img-description {
+    padding: 1rem 1rem;
+    .img-title {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .img-location {
+      font-size: 8px;
+    }
+  }
+  .Carousel-banner {
+    .button-pair button {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+    }
+    .button-pair .first-button {
+      margin-right: 1rem;
+    }
+  }
+} 
+
+@media screen and (max-width: 320px) {
+ 
+} 
