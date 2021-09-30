@@ -99,12 +99,13 @@ export default class AboutDLC extends Vue {
   private readonly ourMissionDataObject = {
     heading: ['Our Mission'],
     imageName: 'image1.jpg',
-    ourMissionHeaderPara: [
+    ourMissionHeaderPara: [[
         'Founded in 1994 by Mike Meldman, Discovery Land Company is a',
         'US-based real estate developer and operator of private residential',
         'club communities and resorts with a world-renowned portfolio of',
         'domestic and international properties.'
-    ],
+    ], `
+    Founded in 1994 by Mike Meldman, Discovery Land Company is a US-based real estate developer and operator of private residential club communities and resorts with a world-renowned portfolio of domestic and international properties.`],
     ourMissionPara: [[
       'We don’t build buildings, but rather we build settings',
       'where families can create intergenerational memories',

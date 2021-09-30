@@ -11,9 +11,9 @@
         .our-mission-header-contents{
             text-align: center;
             color: #111;
-            font-size: 44px;
             font-family: 'Spectral', serif;
             font-weight: 200;
+            font-size: 2.5rem;
             line-height: 1.4;
             opacity: 1;
         }
@@ -25,22 +25,25 @@
         margin-right: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "content img1"
+        "content img1";
 
         .our-mission-grid-contents {
+            grid-area: content;
             margin-top: auto;
             margin-bottom: auto;
             padding-bottom: 20%;
             h3{
                 color: #222;
-                font-size: 3rem;
                 padding-top: 0;
                 margin: 0;
                 line-height: 1.1;
-                letter-spacing: 1px;
             }
         }
 
         .our-mission-grid-image{
+            grid-template-areas: img1;
             height: 80vh;
             img{
                 margin-top: auto;
@@ -52,3 +55,102 @@
         }
     }
 }
+.small-heading-para{
+    display: none;
+    color: #111;
+    padding: 5%;
+    opacity: 0.9;
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 1200px) {   
+
+}
+
+@media screen and (max-width: 992px) {
+    .our-mission-div{
+        .our-mission-header{
+            padding-bottom: 0;
+            .our-mission-header-contents{
+                display: none;
+            }
+        }
+        .our-mission-grid{
+            width: 80vw;
+            height: 130vh;
+            grid-template-columns: none;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+            "img1 img1"
+            "content content";
+            .our-mission-grid-contents {
+                padding-bottom: 10%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .our-mission-grid-image{
+                width: 70vw;
+                margin-left: auto;
+                padding-bottom: 5%;
+                img{
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .small-heading-para{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .small-heading-para{
+        font-size: 1.2rem;
+        text-align: left;
+        padding: 5%;
+    }
+    .our-mission-div{
+        .our-mission-header{
+            padding-bottom: 0;
+            .our-mission-header-contents{
+                display: none;
+            }
+        }
+        .our-mission-grid{
+            .our-mission-grid-image{
+                width: 80vw;
+                margin-bottom: 5%;
+                img{
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .small-heading-para{
+        font-size: 1rem;
+        text-align: left;
+        padding: 10%;
+        padding-bottom: 5%;
+    }
+    .our-mission-div{
+        .our-mission-grid{
+            height: max-content;
+        }
+    }
+} 
+
+@media screen and (max-width: 480px) {
+
+} 
+
+@media screen and (max-width: 320px) {
+    
+} 

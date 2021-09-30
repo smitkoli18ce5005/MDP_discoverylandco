@@ -6,6 +6,7 @@
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&family=Work+Sans:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200;400&display=swap');
 html{
   scroll-behavior: smooth;
 }

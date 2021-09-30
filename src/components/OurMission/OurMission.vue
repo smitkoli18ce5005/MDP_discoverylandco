@@ -1,7 +1,8 @@
 <template>
     <div class="our-mission-div">
         <div class="our-mission-header">
-            <div class="our-mission-header-contents" v-for="items in ourMissionData.ourMissionHeaderPara" v-bind:key="items" v-text="items"></div>
+            <div class="our-mission-header-contents" v-for="items in ourMissionData.ourMissionHeaderPara[0]" v-bind:key="items" v-text="items"></div>
+            <p class="small-heading-para" v-text="ourMissionData.ourMissionHeaderPara[1]"></p>
         </div>
         <div class="our-mission-grid">
             <div class="our-mission-grid-contents">

@@ -22,3 +22,4 @@
 * Reusable Video Header component for Home page and Experience page
 * Reusable Our Mission component for About DLC page page and Experience page
 * Made Video Header component responsive
+* Made Home Page responsive

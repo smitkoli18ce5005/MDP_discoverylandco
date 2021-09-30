@@ -25,11 +25,13 @@ export default class Experiences extends Vue {
   private readonly ourMissionDataObject = {
     heading: ['Exclusive to', 'your world'],
     imageName: 'image1.jpg',
-    ourMissionHeaderPara: [
+    ourMissionHeaderPara: [[
         'Memorable days. Exceptional nights. We believe it’s our mission to',
         'make every minute matter. So you can live your life to the fullest,',
         'with the people closest to you.'
-    ],
+    ], `
+    Memorable days. Exceptional nights. We believe it’s our mission to make every minute matter. So you can live your life to the fullest, with the people closest to you.
+  `],
     ourMissionPara: [[
       'Our worlds are designed to offer you endless ',
       'opportunities to share incredible once-in-a-lifetime ',
