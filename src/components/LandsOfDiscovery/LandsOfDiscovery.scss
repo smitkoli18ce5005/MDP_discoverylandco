@@ -92,6 +92,7 @@
             display: block;
             margin: 0;
             padding: 0;
+            line-height: 1;
         }
         button {
             border: 0;
@@ -113,7 +114,6 @@
     .weather-chart{
         display: flex;
         flex-direction: column;
-        margin-right: 20%;
     }
 }
 .place-name{
@@ -121,6 +121,16 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+}
+.location{
+    width: 100%;
+    .bi{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    span{
+        font-size: 12px;
+    }
 }
 .location .location-tag{
     display: flex;
@@ -149,8 +159,8 @@
     }
 }
 .bi{
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 @media screen and (max-width: 1200px) {   
     .lands-of-discovery-header{

@@ -24,3 +24,4 @@
 * Made Video Header component responsive
 * Made Home Page responsive
 * Made AboutDLC and Experience page responsive
+* Added button functionality to globe component to change data in home page
