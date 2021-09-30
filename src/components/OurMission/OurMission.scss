@@ -66,8 +66,30 @@
     line-height: 1.4;
 }
 
-@media screen and (max-width: 1200px) {   
+@media screen and (max-width: 1400px) {   
+    .our-mission-div{
+        .our-mission-header{
+                .our-mission-header-contents{
+                font-size: 2.2rem;
+            }
+        }
+        .our-mission-grid{
+            width: 80vw;
+        }
+    } 
+}
 
+@media screen and (max-width: 1200px) {  
+    .our-mission-div{
+        .our-mission-header{
+                .our-mission-header-contents{
+                font-size: 2rem;
+            }
+        }
+        .our-mission-grid{
+            width: 90vw;
+        }
+    }  
 }
 
 @media screen and (max-width: 992px) {
