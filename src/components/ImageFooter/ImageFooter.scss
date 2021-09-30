@@ -28,7 +28,7 @@
             font-weight: 200;
             padding: 0;
             margin: 0;
-            font-size: 52px;
+            font-size: 2.5rem;
         }
     }
 }
@@ -92,3 +92,68 @@
 .btn.btn-border-1:hover::before {
     transition: width .1s ease, height .1s ease .1s;
 }
+
+@media screen and (max-width: 1200px) {   
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    .image-footer-div{
+        .image-footer-content{
+            h1{
+                font-size: 2.3rem;
+            }
+        }
+    }
+    .btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-footer-div{
+        .image-footer-content{
+            h1{
+                font-size: 2rem;
+            }
+        }
+    }
+    .btn {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .image-footer-div{
+        .image-footer-content{
+            h1{
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .btn {
+        font-size: 11px;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .image-footer-div{
+        .image-footer-content{
+            h1{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .btn {
+        font-size: 10px;
+    }
+} 
+
+@media screen and (max-width: 320px) {
+    .btn {
+        font-size: 8px;
+    }
+} 

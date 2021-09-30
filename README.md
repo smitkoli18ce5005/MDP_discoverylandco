@@ -23,3 +23,4 @@
 * Reusable Our Mission component for About DLC page page and Experience page
 * Made Video Header component responsive
 * Made Home Page responsive
+* Made AboutDLC and Experience page responsive
