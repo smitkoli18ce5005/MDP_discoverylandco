@@ -16,3 +16,48 @@
         width: 100vw;
     }
 }
+
+@media screen and (max-width: 1200px) {   
+    .full-image-div{
+        height: 50vh;
+        img{
+            height: 50vh;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .full-image-div{
+        height: 40vh;
+        img{
+            height: 40vh;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .full-image-div{
+        height: 35vh;
+        img{
+            height: 35vh;
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+} 
+
+@media screen and (max-width: 480px) {
+    .full-image-div{
+        height: 30vh;
+        img{
+            height: 30vh;
+        }
+    }
+} 
+
+@media screen and (max-width: 320px) {
+ 
+} 

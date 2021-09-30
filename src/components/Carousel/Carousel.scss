@@ -273,5 +273,8 @@ $animationSpeed: 25s;
 } 
 
 @media screen and (max-width: 320px) {
- 
+  .Carousel {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 } 

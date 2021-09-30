@@ -6,8 +6,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding: 5%;
         .our-mission-header-contents{
             text-align: center;
             color: #111;
@@ -19,7 +18,7 @@
         }
     }
     .our-mission-grid{
-        width: 60vw;
+        width: 70vw;
         height: 100vh;
         margin-left: auto;
         margin-right: auto;
@@ -95,7 +94,7 @@
             .our-mission-grid-image{
                 width: 70vw;
                 margin-left: auto;
-                padding-bottom: 5%;
+                margin-bottom: 5%;
                 img{
                     margin: auto;
                 }
@@ -123,7 +122,6 @@
         .our-mission-grid{
             .our-mission-grid-image{
                 width: 80vw;
-                margin-bottom: 5%;
                 img{
                     margin: auto;
                 }
@@ -140,11 +138,6 @@
         padding: 10%;
         padding-bottom: 5%;
     }
-    .our-mission-div{
-        .our-mission-grid{
-            height: max-content;
-        }
-    }
 } 
 
 @media screen and (max-width: 480px) {
@@ -153,4 +146,9 @@
 
 @media screen and (max-width: 320px) {
     
+    .our-mission-div{
+        .our-mission-grid{
+            height: max-content;
+        }
+    }
 } 
