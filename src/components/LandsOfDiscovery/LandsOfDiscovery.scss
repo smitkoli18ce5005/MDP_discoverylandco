@@ -81,9 +81,9 @@
     grid-template-columns: 0.8fr 1fr;
     position: relative;
     .location-info{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: grid;
+        grid-template-rows: 0.3fr 0.5fr 1fr 0.5fr;
+        align-items: center;
         padding: 15%;
         color: hsla(0,0%,100%,.5);
         line-height: 2;
@@ -108,19 +108,26 @@
     }
 }
 .weather{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    justify-content: space-between;
     .weather-chart{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 0.5fr 0.3fr;
+        grid-gap: 1% 0;
+        text-align: center;
+        svg{
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 .place-name{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    padding-bottom: 1%;
     margin: 0;
+    grid-gap: 1% 0;
 }
 .location{
     width: 100%;
@@ -133,9 +140,9 @@
     }
 }
 .location .location-tag{
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
     align-items: center;
-
 }
 .location-image{
     padding-bottom: 5%;
@@ -181,9 +188,9 @@
         width: 75vw;
     }
     .lands-of-discovery{
-        width: 110vw;
+        width: 100vw;
         height: 90vh;
-        background-size:110% 120%;
+        background-size:100% 100%;
     }
     .lands-of-discovery-links a{
         font-size: 0.8rem;
@@ -246,6 +253,9 @@
     .bi{
         width: 1.8rem;
         height: 1.8rem;
+    }
+    .location .location-tag{
+        grid-template-columns: 0.3fr 1fr;
     }
 } 
 
