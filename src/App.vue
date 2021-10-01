@@ -73,5 +73,8 @@ p{
 } 
 
 @media screen and (max-width: 320px) {
+  .para-text{
+            letter-spacing: 0.7px;
+        }
 } 
 </style>

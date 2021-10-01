@@ -25,3 +25,4 @@
 * Made Home Page responsive
 * Made AboutDLC and Experience page responsive
 * Added button functionality to globe component to change data in home page
+* UI improvements for para text not taking 100% width
