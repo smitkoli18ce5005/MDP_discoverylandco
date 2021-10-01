@@ -1,6 +1,7 @@
 <template>
   <div class="main-press-div">
     <Header />
+    <ImageHeader v-bind:flag="false" />
     <Footer />
   </div>
 </template>

@@ -1,7 +1,7 @@
 import './AboutDLC.scss'
 import { Options, Vue } from 'vue-class-component';
 import Header from '@/components/Header/Header.vue';
-import AboutDlcHeader from '@/components/AboutDlcHeader/AboutDlcHeader.vue';
+import ImageHeader from '@/components/ImageHeader/ImageHeader.vue';
 import OurMission from '@/components/OurMission/OurMission.vue';
 import FullImage from '@/components/FullImage/FullImage.vue';
 import Carousel from '@/components/Carousel/Carousel.vue';
@@ -11,7 +11,7 @@ import Footer from '@/components/Footer/Footer.vue';
 @Options({
   components: {
     Header,
-    AboutDlcHeader,
+    ImageHeader,
     OurMission,
     FullImage,
     Carousel,

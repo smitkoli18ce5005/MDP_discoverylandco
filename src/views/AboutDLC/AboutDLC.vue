@@ -1,7 +1,7 @@
 <template>
   <div class="main-aboutdlc-div">
     <Header />
-    <AboutDlcHeader />
+    <ImageHeader v-bind:flag="true" />
     <OurMission v-bind:ourMissionData="ourMissionDataObject" />
     <FullImage v-bind:picName="picsArray[0]" />
     <Carousel v-bind:content="headings" v-bind:dataList="carouselList" v-bind:calledBy="'AboutDLC'" />
