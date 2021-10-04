@@ -2,6 +2,7 @@
   <div class="main-press-div">
     <Header />
     <ImageHeader v-bind:flag="false" />
+    <LatestNews />
     <Footer />
   </div>
 </template>

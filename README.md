@@ -29,3 +29,4 @@
 * Bug fix for globe component constantly jumping around when we press arrow keys
 * Reusable Image Header component for About DLC and Press page
 * Added cards section in Experience page and made it responsive
+* Added Latest News section in press page and made it dynamic and responsive

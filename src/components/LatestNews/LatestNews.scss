@@ -1,0 +1,293 @@
+.btn1{
+    position: relative;
+    margin-top: 10%;
+    padding: 5% 10%;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: transparent;
+    color: #444;
+    border: 1px solid #999999;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    width: 50%;
+}
+.btn1.btn-border-2::after,
+    .btn1.btn-border-2::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 0%;
+        visibility: hidden;
+    }
+
+.btn1.btn-border-2::after {
+    bottom: -1px;
+    right: -1px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+}
+.btn1.btn-border-2::before {
+    top: -1px;
+    left: -1px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+}
+
+.btn1.btn-border-2:hover {
+    animation: pulse 1s ease-out .4s;
+    color: #222;
+}
+
+.btn1.btn-border-2:hover::after,
+.btn1.btn-border-2:hover::before {
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    visibility: visible;
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn1.btn-border-2:hover::after {
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn1.btn-border-2:hover::before {
+    transition: width .1s ease, height .1s ease .1s;
+}
+
+.latest-news-main-div{
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    .latest-news-header{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+        padding-bottom: 0;
+    }
+    h1{
+        color: #111;
+        font-family: 'Spectral', serif;
+        font-weight: 200;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+}
+.latest-news-div{
+    width: 60vw;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    img{
+        position: absolute;
+        margin-top: auto;
+        margin-bottom: auto;
+        z-index: 1;
+        width: 70%;
+        height: 90%;
+        object-fit: cover;
+    }
+    .latest-news-content{
+        position: absolute;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: #fff;
+        color: #111;
+        z-index: 2; 
+        width: 30%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 5%;
+        h1{
+            padding: 0;
+            margin: 0;
+            font-size: 2rem;
+        }
+        p, span{
+            font-family: sans-serif;
+            color: #777;
+            font-size: 1rem;
+            line-height: 2;
+            padding-bottom: 2%;
+        }
+    }
+}
+.pagination{
+    position: relative;
+    color: black;
+    text-align: center;
+    height: 10vh;
+    font-size: 1.4rem;
+    padding: 1%;
+    .arrow-buttons{
+        cursor: pointer;
+        color: black;
+        font-size: 2.5rem;
+        padding: 1%;
+        background:none;
+        border:none;
+        margin:0;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 1800px) {   
+    .latest-news-div{
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 1600px) {   
+    .latest-news-div{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 1400px) {   
+    .latest-news-div{
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .btn1{
+        width: 60%;
+    }
+    .latest-news-main-div{
+        h1{
+            font-size: 2rem;
+            padding-top: 1%;
+        }
+    }
+    .latest-news-div{
+        height: 110vh;
+        .latest-news-content{
+            h1{
+                padding: 0;
+                margin: 0;
+                font-size: 1.8rem;
+            }
+            p, span{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .pagination{
+        font-size: 1.4rem;
+        .arrow-buttons{
+            font-size: 2.2rem;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .latest-news-header{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .latest-news-div{
+        width: 100vw;
+        height: 70vh;
+        img{
+            width: 100%;
+            height: 50%;
+            margin: 0;
+        }
+        .latest-news-content{
+            width: 80%;
+            height: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            top: 30%;
+            p{
+                width: 50%;
+            }
+        }
+    }
+    .btn1{
+        width: 30%;
+        margin-top: 0;
+        padding: 3% 6%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .latest-news-div{
+        .latest-news-content{
+            p{
+                line-height: 1.5;
+            }
+        }
+    }
+    .btn1{
+        font-size: 14px;
+        padding: 3% 2%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+} 
+
+@media screen and (max-width: 480px) {
+    .latest-news-div{
+        height: 110vh;
+        .latest-news-content{
+            height: 70vh;
+            h1{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 0.8rem;
+                width: 100%;
+                line-height: 2;
+            }
+        }
+    }
+    .btn1{
+        width: 40%;
+    }
+    .pagination{
+        font-size: 1.1rem;
+        .arrow-buttons{
+            font-size: 1.8rem;
+        }
+    }
+} 
+
+@media screen and (max-width: 320px) {
+    .latest-news-div{
+        height: 110vh;
+        img{
+            height: 40%;
+        }
+        .latest-news-content{
+            height: 80vh;
+            top: 20%;
+            h1{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 0.7rem;
+                width: 100%;
+                line-height: 2;
+            }
+        }
+    }
+    .btn1{
+        width: 40%;
+    }
+    .pagination{
+        font-size: 1.1rem;
+        .arrow-buttons{
+            font-size: 1.8rem;
+        }
+    }
+} 
