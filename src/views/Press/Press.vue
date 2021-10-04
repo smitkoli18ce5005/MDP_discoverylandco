@@ -3,6 +3,7 @@
     <Header />
     <ImageHeader v-bind:flag="false" />
     <LatestNews />
+    <PressGrid />
     <Footer />
   </div>
 </template>

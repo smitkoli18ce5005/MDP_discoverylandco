@@ -30,3 +30,4 @@
 * Reusable Image Header component for About DLC and Press page
 * Added cards section in Experience page and made it responsive
 * Added Latest News section in press page and made it dynamic and responsive
+*  Added Last grid section of press page and made it dynamic and responsive
