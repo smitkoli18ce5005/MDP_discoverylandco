@@ -26,8 +26,8 @@
             background-color: #fff;
             color: black;
             padding: 3%;
-            width: 20vw;
-            height: 20vw;
+            width: 25vw;
+            height: 25vw;
             position: absolute;
             h1{
                 padding: 0;
@@ -149,7 +149,7 @@
         }
 }
 
-@media screen and (max-width: 1300px) {   
+@media screen and (max-width: 1400px) {   
     .image-gradient-main-div{
         .image-gradient-div{
             .gradient-content{
@@ -183,12 +183,12 @@
             width: 60vw;
             .gradient{
                 width: 60vw;
-                height: 20vh;
+                height: 40vh;
             }
             .gradient-content{
                 width: 50vw;
                 height: 35vw;
-                padding: 0;
+                padding: 3%;
                 h1{
                     margin: 0;
                     font-size: 1.8rem;
@@ -276,7 +276,7 @@
 
 @media screen and (max-width: 480px) {
     .image-gradient-main-div{
-        height: 80vh;
+        height: 85vh;
         .image-gradient-div{
             width: 90vw;
             .gradient{
