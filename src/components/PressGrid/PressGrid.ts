@@ -178,7 +178,7 @@ import { Options, Vue } from 'vue-class-component';
             } else if (change == 1){
                 this.index = 0;
             } else {
-                this.index = 3
+                this.index = 9
             }
         },
         getImage(name: string){

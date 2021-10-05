@@ -25,7 +25,7 @@
         </div>
         <div class="pagination">
             <button class="arrow-buttons" @click="changeIndex(-1)">&#8592;</button> 
-            {{index+1}} - 4
+            {{index+1}} - 9
             <button class="arrow-buttons" @click="changeIndex(1)">&#8594;</button> 
         </div>
         <div v-for="items in pressData" v-bind:key="items" class="press-grid-div1">

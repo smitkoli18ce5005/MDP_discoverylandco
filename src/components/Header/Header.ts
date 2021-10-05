@@ -2,6 +2,16 @@ import './Header.scss'
 import { Options, Vue } from 'vue-class-component';
 
 @Options({
+  data(){
+    return {
+        flag: true,
+    }
+},
+methods:{
+  changeFlag() {
+      this.flag = ! this.flag
+    }
+}
 })
 
 

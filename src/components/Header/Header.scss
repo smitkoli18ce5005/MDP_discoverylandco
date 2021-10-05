@@ -10,9 +10,9 @@ $whiteColor: #ffffff;
   width: 100vw;
   position: absolute;
   z-index: 1000;
-  
+
 }
-#nav {
+#nav, #nav2 {
   @include flexRow();
   width: 80vw;
   margin-left: auto;
@@ -24,6 +24,7 @@ $whiteColor: #ffffff;
   font-size: 1rem;
 
   img {
+    z-index: 900;
     width: 140px;
     padding-bottom: 1px;
     padding-top: 1px;
@@ -57,6 +58,16 @@ $whiteColor: #ffffff;
   .routes:hover:after{
     width: 100%;
   }
+}
+.nav-button{
+  z-index: 900;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  background:none;
+  border:none;
+  margin:0;
+  cursor: pointer;
 }
 
   @media (max-width: 1200px) {   
