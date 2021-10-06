@@ -94,8 +94,14 @@
     }
     .press-grid-div1{
         height: max-content;
-        display: grid;
-        grid-gap: 5% 5%;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .press-grid{
+            height: max-content;
+        }
         h1{
             font-size: 1.8rem;
             text-align: left;
